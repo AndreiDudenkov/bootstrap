@@ -1,0 +1,85 @@
+@import './fonts/fonts.scss';
+@import './constants/null.scss';
+@import './constants/base.scss';
+@import './libs/swiper.scss';
+@import './components/modal.scss';
+
+
+.Arta_8iphone_1 {
+  width: 375px;
+  height: 667px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Features {
+  position: absolute;
+  width: 327.2px;
+  height: 138.6px;
+  top: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.Selectors {
+  position: absolute;
+  width: 327px;
+  height: 120px;
+  top: 429px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Yearly {
+  width: 327px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.3024);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+}
+
+
+.BestOffer {
+  position: relative;
+  width: 119px;
+  height: 20px;
+  top: -10px;
+  left: 184px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4959);
+}
+.inscription_Best{
+  position: relative;
+  width: 74px;
+  height: 15px;
+  top: 2px;
+  left: 23px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(20, 17, 49, 1);
+}
+
+.Weekly {
+  position: absolute;
+  width: 327px;
+  height: 56px;
+  top: 64px;
+  background: rgba(255, 255, 255, 0.1016);
+}
+
+.Continue {
+  position: absolute;
+  width: 327px;
+  height: 56px;
+  top: 557px;
+  background-color:rgba(255, 255, 255, 1);
+;
+}

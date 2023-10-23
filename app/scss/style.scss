@@ -3,54 +3,92 @@
 @import './constants/base.scss';
 @import './libs/swiper.scss';
 @import './components/modal.scss';
+@font-face {
+  font-family: 'SF Pro';
+  src: url('app/fonts/sf-pro-display-cufonfonts') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 
-.Arta_8iphone_1 {
-  width: 375px;
-  height: 667px;
+body {
+  background-image: url('../images/accomodate/cards/bg_Arta_8iphone_1.png');
+  background-repeat: no-repeat;
+}
+.header{
+  height: 60px;
+}
+.main {
   display: flex;
+  margin: 60px 24px 54px 24px ;
   flex-direction: column;
   align-items: center;
 }
-
+.inscription_Access {
+  margin: 0  0 40px 0;
+  height: 92px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-shadow: 0 0 48px rgba(4, 3, 26, .83);
+  font-family: SF Pro, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 860;
+  line-height: 46px;
+}
 .Features {
-  position: absolute;
-  width: 327.2px;
-  height: 138.6px;
-  top: 250px;
+  margin: 0  0 40px 0;
+  height: 138px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
-
-.Selectors {
+.Features_item{
+  position: relative;
+}
+.inscription_creationText {
   position: absolute;
-  width: 327px;
+  width: 90px;
+  height: 27px;
+  top: 100.8px;
+  left: 7.2px;
+  font-family: 'SF Pro', cursive;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.Selectors {
+  width: 100%;
   height: 120px;
-  top: 429px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .Yearly {
-  width: 327px;
+  margin: 3px 0;
   height: 56px;
-  background-color: rgba(255, 255, 255, 0.3024);
-  border: 1px solid rgba(255, 255, 255, 1);
-  box-sizing: border-box;
+  border-radius: 32px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, .3);
+  backdrop-filter: blur(5.436563491821289px);
 }
-
-
 .BestOffer {
   position: relative;
   width: 119px;
   height: 20px;
   top: -10px;
   left: 184px;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4959);
+  border-radius: 10px;
+  background:rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
 }
 .inscription_Best{
   position: relative;
@@ -68,18 +106,48 @@
 }
 
 .Weekly {
-  position: absolute;
-  width: 327px;
+  margin: 4px 0;
   height: 56px;
-  top: 64px;
-  background: rgba(255, 255, 255, 0.1016);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(5.436563491821289px)
 }
 
 .Continue {
-  position: absolute;
-  width: 327px;
+  width: 100%;
+  margin: 4px 0;
   height: 56px;
-  top: 557px;
-  background-color:rgba(255, 255, 255, 1);
-;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 1);
 }
+
+.inscription_Continue {
+  width: 87px;
+  height: 24px;
+  top: 16px;
+  left: 120px;
+  font-family: 'SF Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 590;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(7, 11, 51, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

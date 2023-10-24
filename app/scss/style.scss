@@ -5,7 +5,7 @@
 @import './components/modal.scss';
 @font-face {
   font-family: 'SF Pro';
-  src: url('app/fonts/sf-pro-display-cufonfonts') format('opentype');
+  src: url('../fonts/sf-pro-display-cufonfonts') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,29 +17,57 @@
 
 
 body {
+  width: 375px;
   background-image: url('../images/accomodate/cards/bg_Arta_8iphone_1.png');
   background-repeat: no-repeat;
 }
 .header{
   height: 60px;
 }
-.main {
+.Status_bar{
   display: flex;
-  margin: 60px 24px 54px 24px ;
+  justify-content: space-between;
+  height: 21px;
+  margin: 0 5px 3px 6px;
+  //background-color: #070b33;
+}
+
+.Status_bar_elements{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Status_bar_elements img{
+  padding: 0 2px;
+}
+.Cross{
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  padding: 15px 0 0 24px;
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.40);
+
+
+
+}
+.main {
+  margin: 60px 24px 0 24px ;
   flex-direction: column;
   align-items: center;
 }
 .inscription_Access {
   margin: 0  0 40px 0;
   height: 92px;
-  color: rgba(255, 255, 255, 1);
+  color: #FFF;
   text-align: center;
-  text-shadow: 0 0 48px rgba(4, 3, 26, .83);
-  font-family: SF Pro, sans-serif;
+  text-shadow: 0 0 48px rgba(4, 3, 26, 0.83);
+  font-family:'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
   font-size: 42px;
   font-style: normal;
   font-weight: 860;
-  line-height: 46px;
+  line-height: 46px; /* 109.524% */
+
 }
 .Features {
   margin: 0  0 40px 0;
@@ -57,7 +85,7 @@ body {
   height: 27px;
   top: 100.8px;
   left: 7.2px;
-  font-family: 'SF Pro', cursive;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
@@ -73,26 +101,67 @@ body {
   justify-content: space-between;
 }
 .Yearly {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 63px 8px 24px;
   margin: 3px 0;
   height: 56px;
   border-radius: 32px;
   border: 1px solid #FFF;
   background: rgba(255, 255, 255, .3);
   backdrop-filter: blur(5.436563491821289px);
+  z-index: 10;
+}
+.yearlyAccessText_priceYearlyText{
+  display: flex;
+  flex-direction: column;
+
+}
+.yearlyAccessText{
+  height: 19px;
+  color: #FFF;
+  font-family: SF Pro Display, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.priceYearlyText{
+  display: flex;
+  align-items: flex-end;
+  height: 19px;
+  color: #FFF;
+  opacity: 0.7;
+  font-family: SF Pro Display, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.priceWeeklyText{
+  height: 38px;
+  color: #FFF;
+  opacity: 0.7;
+  font-family: SF Pro Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .BestOffer {
-  position: relative;
+  position: absolute;
   width: 119px;
   height: 20px;
   top: -10px;
-  left: 184px;
+  right: 24px;
   border-radius: 10px;
   background:rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
 }
-.inscription_Best{
+.inscription_BestOffer{
   position: relative;
-  width: 74px;
   height: 15px;
   top: 2px;
   left: 23px;
@@ -106,16 +175,29 @@ body {
 }
 
 .Weekly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 63px 8px 24px;
   margin: 4px 0;
   height: 56px;
   border-radius: 32px;
   background: rgba(255, 255, 255, .1);
   backdrop-filter: blur(5.436563491821289px)
 }
+.weeklyAccessText{
+  color: #FFF;
+  font-family: SF Pro Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
 
 .Continue {
   width: 100%;
-  margin: 4px 0;
+  margin: 8px 0 0 0;
   height: 56px;
   display: flex;
   justify-content: center;
@@ -129,16 +211,30 @@ body {
   height: 24px;
   top: 16px;
   left: 120px;
-  font-family: 'SF Pro', sans-serif;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
   font-size: 20px;
   font-weight: 590;
   line-height: 24px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
   color: rgba(7, 11, 51, 1);
 }
-
-
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 15px;
+  margin: 28px 57px 11px 57px;
+}
+.Footer_elements{
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  font-family: SF Pro Display,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;;
+  font-size: 12.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.577px;
+}
 
 
 

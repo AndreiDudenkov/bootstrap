@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (min-width: 413px) {
+    height: 170px;
+    justify-content: space-around;
+  }
 }
 .Yearly {
   display: flex;
@@ -21,7 +25,6 @@
 .YearlyAccessText_priceYearlyText{
   display: flex;
   flex-direction: column;
-
 }
 .YearlyAccessText{
   height: 19px;
@@ -57,7 +60,7 @@
 }
 .BestOffer {
   position: absolute;
-  width: 119px;
+  min-width: 119px;
   height: 20px;
   top: -10px;
   right: 24px;
@@ -109,6 +112,9 @@
   align-items: center;
   border-radius: 32px;
   background: rgba(255, 255, 255, 1);
+}
+.Continue_Button{
+  text-decoration: none;
 }
 
 .Inscription_Continue {

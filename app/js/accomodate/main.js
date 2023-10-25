@@ -11,7 +11,7 @@ const loadJSON = (callback) => {
         langFromQuery = 'en';
     }
 
-    const jsonPath = `${langFromQuery}.json`;
+    const jsonPath = `../language_json/${langFromQuery}.json`;
     fetch(jsonPath)
         .then(response => response.json())
         .then(data => callback(data))

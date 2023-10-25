@@ -1,0 +1,27 @@
+.header{
+  height: 60px;
+}
+.Status_bar{
+  display: flex;
+  justify-content: space-between;
+  height: 21px;
+  margin: 0 5px 3px 6px;
+  //background-color: #070b33;
+}
+
+.Status_bar_elements{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Status_bar_elements img{
+  padding: 0 2px;
+}
+.Cross{
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  padding: 15px 0 0 24px;
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.40);
+}

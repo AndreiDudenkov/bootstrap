@@ -1,0 +1,35 @@
+@import './fonts/fonts.scss';
+@import './constants/null.scss';
+@import './constants/base.scss';
+@import './libs/swiper.scss';
+@import 'components/iPhone_13/footer_13';
+@import 'components/iPhone_13/header_13';
+@import 'components/iPhone_13/features_13';
+@import 'components/iPhone_13/selectors_13';
+@import 'components/iPhone_13/main_13';
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body_13 {
+  background-image: url('../images/accomodate/cards/bg_13iphone.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

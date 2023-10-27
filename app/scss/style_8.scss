@@ -2,22 +2,23 @@
 @import './constants/null.scss';
 @import './constants/base.scss';
 @import './libs/swiper.scss';
-@import 'components/footer';
-@import './components/header';
-@import './components/features';
-@import './components/selectors';
-@import './components/main';
+@import 'components/iPhone_8/footer_8';
+@import 'components/iPhone_8/header_8';
+@import 'components/iPhone_8/features_8';
+@import 'components/iPhone_8/selectors_8';
+@import 'components/iPhone_8/main_8';
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body {
+.body_8 {
   background-image: url('../images/accomodate/cards/bg_Arta_8iphone_1.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 
 
 

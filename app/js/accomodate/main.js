@@ -18,6 +18,9 @@ const loadJSON = (callback) => {
         .catch(error => console.error('Ошибка загрузки JSON: ', error));
 }
 
+
+
+
 const updateTextElements = (jsonData) => {
     document.getElementById("accessText").innerHTML = jsonData["Get Unlimited <br>Access"];
     document.getElementById("creationText").innerHTML = jsonData["Unlimited Art <br>Creation"];
@@ -27,12 +30,18 @@ const updateTextElements = (jsonData) => {
     document.getElementById("bestOfferText").innerHTML = jsonData["BEST OFFER"];
     document.getElementById("priceYearlyText").innerHTML = jsonData["Just {{price}} per year"].replace("{{price}}", "$39.99");
     document.getElementById("weeklyAccessText").innerHTML = jsonData["WEEKLY ACCESS"];
-    document.getElementById("priceWeeklyText").innerHTML = jsonData["{{price}} <br>per week"].replace("{{price}}", "$0.48");
+    // document.getElementById("priceWeeklyText").innerHTML = jsonData["{{price}} <br>per week"].replace("{{price}}", "$0.48");
+    const priceYearly = document.getElementById("YearlypriceWeeklyText");
+    const priceWeekly = document.getElementById("WeeklypriceWeeklyText");
+    const priceText = jsonData["{{price}} <br>per week"].replace("{{price}}", "$0.48");
     document.getElementById("termsOfUseText").innerHTML = jsonData["Terms of Use"];
     document.getElementById("privacyPolicyText").innerHTML = jsonData["Privacy Policy"];
     document.getElementById("Restore").innerHTML = jsonData["Restore"];
     document.getElementById("Continue").innerHTML = jsonData["Continue"];
+    priceYearly.innerHTML = priceText;
+    priceWeekly.innerHTML = priceText;
 }
+
 
 loadJSON(function (data) {
     updateTextElements(data);

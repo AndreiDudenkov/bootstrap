@@ -1,0 +1,24 @@
+.Features {
+  margin: 0  0 40px 0;
+  height: 138px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Features_item{
+  position: relative;
+}
+.Inscription_creationText {
+  position: absolute;
+  width: 90px;
+  height: 27px;
+  top: 100.8px;
+  left: 7.2px;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}

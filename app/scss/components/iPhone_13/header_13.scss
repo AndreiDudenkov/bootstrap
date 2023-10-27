@@ -1,0 +1,37 @@
+.header_13{
+  height: 90px;
+}
+.Status_bar_13{
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+ padding: 14px 15px 12px 22px;
+}
+
+.Status_bar_elements_13{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Status_bar_elements_13 img{
+  padding: 0 2px;
+}
+.Time{
+  width: 56.16px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+.Cross_13{
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  padding: 25px 0 0 24px;
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.40);
+}
